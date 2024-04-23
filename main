@@ -3,7 +3,6 @@ from sys import exit
 
 pygame.init()
 
-
 clock = pygame.time.Clock
 FPS = 70
 
