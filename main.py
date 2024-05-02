@@ -42,9 +42,6 @@ player_surface = pygame.image.load("images/R9.png").convert_alpha()
 player_rect = player_surface.get_rect(midbottom = (85, 300))
 player_gravity = 0
 
-game_over = pygame.image.load("GameOver.png").convert_alpha()
-game_over = pygame.transform.scale(game_over, (200, 36))
-
 number_image = pygame.image.load("images/numbers.png")
 number_image = pygame.transform.scale(number_image, (200, 12))
 
@@ -75,7 +72,6 @@ while True:
 
     win.blit(sky_surface, (0, 0))
     win.blit(ground_surface, (0, 300))
-    win.blit(game_over, (290, 200))
     win.blit(number_image, (-0, -20))
 
     bird_rect.x -= 3
